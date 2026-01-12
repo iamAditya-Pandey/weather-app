@@ -1,63 +1,77 @@
-# Weather App
+# ☁️ Modern Weather App
 
-Welcome to the Weather App repository! This project is a web application that provides real-time weather updates for any location. It utilizes HTML, CSS, and JavaScript to deliver a user-friendly interface and fetches data using the OpenWeatherMap API.
+A sleek, professional weather dashboard featuring a **Dark Glassmorphism UI**. This application provides real-time weather updates, 5-day forecasts, and a "Saved Cities" world map feature, powered by the OpenWeatherMap API.
 
-## Features
+## ✨ Features
 
-- **Live Weather Data**: Get up-to-date weather information for your current location or search for any city worldwide.
-- **5 Days Forecast**: You Can See your city 5 days forecast 
-- **Explore Section**: You Can See Many Random City Weather On Explore Section
-- **Add More Citys**: You Can Add More Citys 
+- **Glassmorphism UI**: A modern, transparent, and responsive design with deep night gradients.
+- **Live Weather Data**: Instant access to temperature, humidity, wind speed, visibility, and more.
+- **5-Day Forecast**: Scrollable forecast cards to plan your week ahead.
+- **Smart Search**: Search for any city globally with error handling and smooth UI transitions.
+- **World Map / Saved Cities**: A dedicated section to save and track weather for your favorite cities.
+- **Auto-Geolocation**: Automatically detects your location on startup to show local weather.
 
-### Technologies Used 
+## 🛠️ Technologies Used
 
-- **Frontend**: HTML, CSS, JAVASCRIPT
-- **API**: [OpenWeatherMap](https://openweathermap.org/)
-- **Icons**: [Fontawesome](https://fontawesome.com/)
+- **Frontend**: HTML5, CSS3 (Flexbox/Grid, Animations), JavaScript (ES6+ Async/Await).
+- **Design Style**: Glassmorphism (Backdrop Filters, Translucency).
+- **API**: [OpenWeatherMap API](https://openweathermap.org/) (Current Weather + 5 Day Forecast).
+- **Icons**: [FontAwesome](https://fontawesome.com/) & Custom 3D Weather Assets.
 
-### Additional information 
+## 🚀 Getting Started
 
-- **To get name of the location (city name or area name) by using longitude and latitude** :- 
-https://openweathermap.org/api/geocoding-api
-
-- **To get current location weather** :- 
-https://openweathermap.org/current
-
-- **To get 5 day forecast** :-  https://openweathermap.org/forecast5
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
+Follow these steps to run the project locally on your machine.
 
 ### Prerequisites
 
-- A modern web browser.
-- An API key from [OpenWeatherMap Api](https://home.openweathermap.org/api_keys)
+- A modern web browser (Chrome, Edge, Firefox).
+- A free API key from [OpenWeatherMap](https://home.openweathermap.org/api_keys).
 
 ### Installation
 
-1. Clone the repository:
-```sh
- git clone https://github.com/kaushalsahu07/weather.git
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/iamAditya-Pandey/weather-app.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```sh
+   cd weather-app
+   ```
+
+3. **Configure your API Key:**
+   - Open `js/main.js`.
+   - Locate the variable at the top:
+     ```javascript
+     const API_KEY = "PUT_YOUR_API_KEY_HERE";
+     ```
+   - Replace the placeholder with your actual key.
+
+4. **Run the App:**
+   - Simply open `index.html` in your browser.
+
+## 📂 Project Structure
+
 ```
-2. Navigate to the project directory:
-```sh 
-cd weather
+weather-app/
+├── css/
+│   ├── style.css    # Main dashboard styles
+│   ├── search.css   # Search page styles
+│   └── world.css    # Saved cities page styles
+├── img/             # Weather icons
+├── js/
+│   ├── main.js      # Logic for index.html
+│   ├── search.js    # Logic for search.html
+│   └── world.js     # Logic for world.html
+├── index.html       # Main Dashboard
+├── search.html      # Search Page
+└── README.md        # Documentation
 ```
-3. Change API key for all the js files
-```javascript
-let apiKey = "Your API Key";
-``` 
-4. Open `index.html` in your browser to view the project.
 
-### Usage
+## 📬 Contact
 
-To use the Weather App, simply enter the name of the city in the search bar and press enter. The app will display the current weather conditions, including temperature, humidity, wind speed, and more.
+**Aditya Pandey** - **GitHub**: [@iamAditya-Pandey](https://github.com/iamAditya-Pandey)  
+- **Email**: pandeyaditya19012006@gmail.com
 
-## Contact
-For any inquiries, reach out at [pandeyaditya19012006@gmail.com].<br>
-GitHub: [@iamAditya-Pandey](https://github.com/iamAditya-Pandey).<br>
-Linkedin: [@](www.linkedin.com/in/kaushalsahu07).<br>
-Instagram: [@cd.kaushal](https://www.instagram.com/cd.kaushal?igsh=cTVram1ia3Vvamxz).<br>
-Portfolio: [Website Link ](https://kaushalsahu07.github.io/portfolio/).<br>
-X (Tweeter): [@kaushalsahu_07](https://x.com/kaushalsahu_07?t=7nk-jApWrJkgW6YwklJZWQ&s=09).<br>
+---
+*Built with ❤️ by Aditya Pandey.*
