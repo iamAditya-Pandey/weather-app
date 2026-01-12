@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="stylesheet" href="css/search.css" />
+  
+  <title>Search City</title>
+</head>
+
+<body>
+  
+  <div class="app-container">
+    
+    <nav class="top-nav">
+     <div class="logo">Weather</div>
+      <ul>
+        <li>
+          <a href="index.html" title="Current Location">
+            <i class="fa-solid fa-location-arrow"></i>
+          </a>
+        </li>
+        <li>
+          <a class="active" href="search.html" title="Search City">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li>
+          <a href="world.html" title="World Map">
+            <i class="fa-solid fa-earth-americas"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="search-section">
+      <h3>Search For City</h3>
+      <div class="search">
+        <div class="search-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <input class="searchinput" type="text" placeholder="Enter city name..." autofocus>
+      </div>
+    </div>
+
+    <div class="message">
+      <p>Enter a city name to see the weather details.</p>
+    </div>
+
+    <div class="error-message">
+      <p>City not found. Please check the spelling and try again.</p>
+    </div>
+
+    <div class="box">
+      
+      <div class="weather-box">
+        <div class="name">
+          <div class="city-name">London</div>
+          <div class="weather-temp">--°</div>
+        </div>
+        <div class="weather-icon">
+          <img class="weather-img" src="img/sun.png" alt="weather icon">
+        </div>
+      </div>
+
+      <div class="weather-desc">
+        <div class="desc-box">
+          <i class="fa-solid fa-wind"></i>
+          <h5>Wind</h5>
+          <span class="desc-info wind">-- m/s</span>
+        </div>
+
+        <div class="desc-box">
+          <i class="fa-solid fa-temperature-full"></i>
+          <h5>Pressure</h5>
+          <span class="desc-info pressure">-- hPa</span>
+        </div>
+
+        <div class="desc-box">
+          <i class="fa-solid fa-droplet"></i>
+          <h5>Humidity</h5>
+          <span class="desc-info humidity">--%</span>
+        </div>
+      </div>
+
+      <div class="weather-desc">
+        <div class="desc-box">
+          <i class="fa-solid fa-sun"></i>
+          <h5>Sunrise</h5>
+          <span class="desc-info sunrise">--:--</span>
+        </div>
+
+        <div class="desc-box">
+          <i class="fa-solid fa-cloud-sun"></i>
+          <h5>Sunset</h5>
+          <span class="desc-info sunset">--:--</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="stylesheet" href="css/world.css" />
+  
+  <title>World Weather</title>
+</head>
+
+<body>
+  <div class="app-container">
+    
+    <nav class="top-nav">
+      <div class="logo">Weather</div>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-location-arrow"></i></a></li>
+        <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><a class="active" href="world.html"><i class="fa-solid fa-earth-americas"></i></a></li>
+      </ul>
+    </nav>
+
+    <div class="section">
+      <div class="date">-- --, ----</div>
+      <div class="button">
+        <i class="btn-icon fa-solid fa-circle-plus"></i>
+      </div>
+    </div>
+
+    <div class="add-section">
+      <h3 class="add-section-title">Add New City</h3>
+      
+      <div class="search">
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <input class="searchinput" type="text" placeholder="Enter city name..." />
+      </div>
+
+      <div class="messages">
+        <p class="normal-message">Press Enter to add the city to your list.</p>
+        <p class="error-message">City not found! Please check spelling.</p>
+        <p class="added-message">City added successfully!</p>
+      </div>
+    </div>
+
+    <div class="box">
+      </div>
+
+  </div>
+
+  <script src="js/world.js"></script>
+</body>
+</html>

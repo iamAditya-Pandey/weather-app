@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div id="screen" class="app-container">
+      
+      <nav class="top-nav">
+        <div class="logo">Weather</div>
+        <ul>
+          <li>
+            <a class="active" href="index.html" title="Current Location">
+              <i class="fa-solid fa-location-arrow"></i>
+            </a>
+          </li>
+          <li>
+            <a href="search.html" title="Search City">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li>
+            <a href="world.html" title="World Map">
+              <i class="fa-solid fa-earth-americas"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="weather-dashboard">
+        
+        <div class="city-header">
+          <i class="fa-solid fa-map-pin"></i>
+          <h1 id="city-name">Locating...</h1>
+        </div>
+
+        <div class="weather-card">
+          <div class="weather-icon-box">
+            <img class="weather-icon" src="img/sun.png" alt="Weather Condition" />
+          </div>
+          
+          <div class="weather-data">
+            <div class="show-metric" id="metric">--°</div>
+            <div class="weather-condition" id="weather-main">Loading</div>
+          </div>
+        </div>
+
+        <div class="weather-details-grid">
+          <div class="detail-item">
+            <span>Humidity</span>
+            <span id="humidity">--</span>%
+          </div>
+          <div class="detail-item">
+            <span>Feels Like</span>
+            <span id="feels-like">--</span>°
+          </div>
+        </div>
+
+        <div class="forecast-section">
+          
+          <div class="today-highlight">
+            <h4>Today's Range</h4>
+            <div class="range-box">
+              <span id="temp-min-today">--°</span> 
+              <span class="divider">to</span> 
+              <span id="temp-max-today">--°</span>
+            </div>
+          </div>
+
+          <div class="future-forecast">
+            <h5>Upcoming Forecast</h5>
+            <div id="future-forecast-box" class="forecast-list">
+              </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>Designed & Developed by <strong>Aditya Pandey</strong></p>
+      </footer>
+
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
